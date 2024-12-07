@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMS Bewerbung</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+        <form id="myForm" action="https://webhook.site/7179fdd8-3a6b-47e3-a540-1e756b3c861f">
+            <div class="box">
+            <h2>Allgemeine Informationen</h2>
+            <p>Geschlecht:</p>
+            <input type="radio" id="Männlich" name="Geschlecht" value="Männlich">
+            <label for="Männlich">Männlich</label><br>
+            <input type="radio" id="Weiblich" name="Geschlecht" value="Weiblich">
+            <label for="Weiblich">Weiblich</label><br>
+
+            <p>Name: <br> <input type="text" name="Name" placeholder="dein Name" required></p>
+            <p>Vorname: <br> <input type="text" name="Vorname" placeholder="dein Vorname"></p>
+            <p>Strasse & Nummer: <br> <input type="text" name="Strasse" placeholder="Musterstrasse"><input type="number" name="Nummer" class="number" placeholder="177" min="1" max="999" required></p>
+            <p>PLZ & Ort: <br> <input type="number" name="PLZ" placeholder="8400" class="number" min="1" max="9999"><input type="text" name="Ort" placeholder="Winterthur" required></p>
+            <p>Handynummer: <br><input type="tel" name="Handynummer" placeholder="z.B. +41 79 123 45 67" required></p>
+            <p>E-mail: <br><input type="email" name="email" placeholder="name@email.com" required></p>
+
+            <p>Bevorzugte Art der Kontaktaufnahme</p>
+            <input type="radio" id="Post" name="kontakt" value="Post" required>
+            <label for="Post">Post</label><br>
+            <input type="radio" id="Telefon" name="kontakt" value="Telefon">
+            <label for="Telefon">Telefon</label><br>
+            <input type="radio" id="Email" name="kontakt" value="Email">
+            <label for="Email">Email</label><br>
+    
+    
+            <br>
+            <label for="birthdate">Enter your Birthdate:</label>
+            <br>
+            <input type="date" id="birthdate" name="birthdate">
+            </div>
+
+            <div class="box">
+            <h2>Sonstiges</h2>
+            <p>Motivation's Schreiben:</p>
+            <textarea class="motivationsschreiben"></textarea>
+            <br>
+
+            <p>Lebenslauf:</p>
+            <label for="fileInput">Select a file to upload:</label>
+            <input type="file" id="fileInput" name="uploadedFile">
+            <br>
+    
+            <p>Link zu Portfolio</p>
+            <input type="url" id="Portfolio" name="Portfolio" placeholder="onenote.com/deinPortfolio/">
+            <br>
+
+            <p>Link zu GitHub Account</p>
+            <input type="url" id="Portfolio" name="Portfolio" placeholder="github.com/deinName/">
+            <br>
+            <br>
+            </div>
+
+            <div class="box">
+            <p>Hiermit bin ich mit den <a href="https://policies.google.com/privacy?hl=de">Datenschutzbestimmungen</a> einverstanden: <input type="checkbox" name="ja" id="einverstanden"></p>
+            <button type="submit">
+                <img src="mail.png" alt="absenden">
+            </button>
+        </div>
+    </form>
+    
+</section>
+</body>
+</html>
